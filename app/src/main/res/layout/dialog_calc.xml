@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_reg"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bg_3"
+            android:fontFamily="@font/lato_reg"
+            android:gravity="center|start"
+            android:inputType="textPostalAddress"
+            android:paddingStart="20dp"
+            android:paddingEnd="25dp"
+            android:textColorHint="@color/grey_500"
+            android:textSize="14sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_reg"
+            android:layout_marginTop="15dp"
+            android:text="Gender"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edt_bg_3">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spnGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/gender_options"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_reg"
+            android:text="City"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_bg_3"
+            android:fontFamily="@font/lato_reg"
+            android:gravity="center|start"
+            android:inputType="textPostalAddress"
+            android:paddingStart="20dp"
+            android:paddingEnd="25dp"
+            android:textColorHint="@color/grey_500"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</layout>

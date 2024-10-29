@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.activity.MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_2"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                app:tint="@color/color_5"
+                android:src="@drawable/baseline_bakery_dining_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/toolTile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:letterSpacing="0.02"
+                android:text="Appointment"
+                android:textColor="@color/color_5"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/deleteAll"
+                android:layout_width="match_parent"
+                android:padding="7dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:letterSpacing="0.02"
+                android:text="DeleteAll  "
+                android:textColor="@color/color_5"
+                android:textSize="18sp"
+                android:drawableTint="@color/color_5"
+                android:drawableEnd="@drawable/baseline_auto_delete_24"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_calc"
+            android:layout_below="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/filterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/color_5"
+            app:fabSize="normal"
+            app:tint="@color/white" />
+
+
+    </RelativeLayout>
+</layout>
